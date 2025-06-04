@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scolaire | GUYOMARD Ethan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+    <div class="header-wrapper">
+        <div class="logo-left">
+            <img src="images/ensibs-removebg-preview.png" alt="ENSIBS">
+        </div>
+
+        <div class="title-center">
+            <h1>GUYOMARD Ethan</h1>
+            <p>Mon parcours scolaire</p>
+        </div>
+
+        <div class="logo-right">
+            <img src="images/partenaire1-removebg-preview.png" alt="Naval Group">
+        </div>
+    </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Résumé.html">Résumé</a></li>
+            <li><a href="Scolaire.html">Scolaire</a></li>
+            <li><a href="Professionnel.html" class="active">Professionnel</a></li>
+            <li><a href="Divers.html">Divers</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="Résumé.html">Résumé</a> > <a href="Scolaire.html">Scolaire</a>
+        </div>
+
+        <h1>Où ai-je réalisé ma scolarité ?</h1>
+        
+        <p>Au cours de ma vie j'ai pu visiter de nombreux établissement, voici une liste non exhaustive de ce que j'ai pu y faire :</p>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'ensibs')">ENSIBS</button>
+            <button class="tab-button" onclick="openTab(event, 'iut')">IUT</button>
+            <button class="tab-button" onclick="openTab(event, 'CPGE')">CPGE</button>
+        </div>
+
+        <div id="ensibs" class="tab-content active">
+            <h2>Parcours Génie Industriel 4.0</h2>
+            
+            <div class="formation-card">
+                <h3>Mathématiques</h3>
+                <p><U>Contenu</U> : Calcul matriciel, statistiques, probabilités, algèbre, analyse.</p>
+                <p><U>Applications</U> : Modélisation de systèmes industriels, analyse de données de production, prévision de la demande, optimisation des processus.</p>
+            </div>
+            
+            <div class="formation-card">
+                <h3>Automatique et robotique</h3>
+                <p><U>Contenu</U> : Commande des systèmes, robotique industrielle, capteurs et actionneurs.</p>
+                <p><U>Applications</U> : Automatisation des lignes de production, maintenance prédictive, intégration de robots collaboratifs.</p>
+            </div>
+
+            <div class="formation-card">
+                <h3>Informatique et programmation</h3>
+                <p><U>Contenu</U> : Programmation (Python, C++), bases de données, systèmes embarqués, cybersécurité.</p>
+                <p><U>Applications</U> : Développement d'applications industrielles, automatisation des processus, sécurisation des systèmes d'information.</p>
+            </div>
+
+            <div class="formation-card">
+                <h3>Génie des procédés et production</h3>
+                <p><U>Contenu</U> : Lean manufacturing, gestion de la production, logistique, supply chain.</p>
+                <p><U>Applications</U> : Optimisation des flux de production, réduction des coûts, amélioration continue.</p>
+            </div>
+            
+            <div class="formation-card">
+                <h3>Gestion de projet et management</h3>
+                <p><U>Contenu</U> : Gestion de projet, économie, droit, communication.</p>
+                <p><U>Applications</U> : Pilotage de projets industriels, coordination d'équipes, prise de décisions stratégiques.</p>
+            </div>
+
+            <div class="formation-card">
+                <h3>Langues et ouverture internationale</h3>
+                <p><U>Contenu</U> : Anglais technique, culture d'entreprise, stages à l'étranger.</p>
+                <p><U>Applications</U> : Communication dans un contexte international, adaptation à des environnements multiculturels.</p>
+            </div>
+
+        </div>
+
+        <div id="iut" class="tab-content">
+            <h2>Parcours Génie Mécanique et Productique</h2>
+            
+            <h3>Conception mécanique</h3>
+            <ul>
+                <li><u>Contenu</u> : CAO (Conception Assistée par Ordinateur), modélisation 3D, dessin technique.</li>
+                <li><u>Applications</u> : Création et amélioration de produits industriels, développement de prototypes, conception de pièces mécaniques .</li>
+            </ul>
+            
+            <h3>Industrialisation et méthodes</h3>
+            <ul>
+                <li><u>Contenu</u> : Processus de fabrication, choix des matériaux, méthodes de production.</li>
+                <li><u>Applications</u> : Optimisation des procédés de fabrication, réduction des coûts de production, amélioration de la qualité .</li>
+            </ul>
+            
+            <h3>Gestion de production et logistique</h3>
+            <ul>
+                <li><u>Contenu</u> : Planification, ordonnancement, gestion des stocks.</li>
+                <li><u>Applications</u> : Organisation efficace des flux de production, minimisation des délais, gestion des approvisionnements .</li>
+            </ul>
+
+            <h3>Contrôle qualité et métrologie</h3>
+            <ul>
+                <li><u>Contenu</u> : Techniques de mesure, assurance qualité, normes industrielles.</li>
+                <li><u>Applications</u> : Garantie de la conformité des produits, amélioration continue des processus, satisfaction client .</li>
+            </ul>
+
+            <h3>Sciences des matériaux</h3>
+            <ul>
+                <li><u>Contenu</u> : Propriétés des matériaux, traitements thermiques, choix des matériaux.</li>
+                <li><u>Applications</u> : Sélection appropriée des matériaux pour les produits, innovation dans les matériaux utilisés .</li>
+            </ul>
+
+            <h3>Mathématiques appliquées</h3>
+            <ul>
+                <li><u>Contenu</u> : Calculs, statistiques, modélisation.</li>
+                <li><u>Applications</u> : Analyse des données de production, modélisation des systèmes mécaniques, prise de décisions basée sur des données quantitatives .</li>
+            </ul>
+        </div>
+
+        <div id="CPGE" class="tab-content">
+            <h2>CPGE MPSI</h2>
+            <p>1ère année comprenant des cours de :</p>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 20px;">
+                <div style="width: 30%; text-align: center; margin-bottom: 20px;">
+                    <img src="images/maths.jpg" alt="maths" style="max-width: 200px; height: 200px;">
+                    <p>Mathématiques et Physiques (12h/semaine, 10h/semaine)</p>
+                </div>
+                <div style="width: 30%; text-align: center; margin-bottom: 20px;">
+                    <img src="images/info.jpg" alt="info" style="max-width: 200px; height: 200px;">
+                    <p>Informatique et Science de l'Ingénieur (6h/semaine)</p>
+                </div>
+                <div style="width: 30%; text-align: center; margin-bottom: 20px;">
+                    <img src="images/philo.jpg" alt="philo" style="max-width: 175px; height: auto;">
+                    <p>Philosophie et langue vivante étrangère (4h/semaine)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>©GUYOMARD Ethan 2025 - Tous droits réservés</p>
+            <p>6 Passage Marguerite Caudan - 56100 Lorient</p>
+            <p>Tél. : 06 12 16 51 27</p>
+            <p>ethan.guyomard1@gmail.com</p>
+            <br>
+            <p>
+                <strong>Ci-joint, mon CV au format PDF. Il contient des informations détaillées sur mon parcours.</strong></p>
+            <a class="btn" href="CV Ethan GUYOMARD.pdf (2).pdf" target="_blank">Télécharger mon CV</a>
+        </div>
+    </footer>
+
+
+</body>
+</html>

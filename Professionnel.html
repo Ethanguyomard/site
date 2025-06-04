@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professionnel | GUYOMARD Ethan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+    <div class="header-wrapper">
+        <div class="logo-left">
+            <img src="images/ensibs-removebg-preview.png" alt="ENSIBS">
+        </div>
+
+        <div class="title-center">
+            <h1>GUYOMARD Ethan</h1>
+            <p>Mes expériences professionnelles</p>
+        </div>
+
+        <div class="logo-right">
+            <img src="images/partenaire1-removebg-preview.png" alt="Naval Group">
+        </div>
+    </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Résumé.html">Résumé</a></li>
+            <li><a href="Scolaire.html">Scolaire</a></li>
+            <li><a href="Professionnel.html">Professionnel</a></li>
+            <li><a href="Divers.html">Divers</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="Résumé.html">Résumé</a> > <a href="Professionnel.html">Professionnel</a>
+        </div>
+
+        <h1>Expériences professionnelles</h1>
+        
+        <p>Au cours de mes études, j'ai pu acquérir différentes expériences professionnelles :</p>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'alternance')">Alternance</button>
+            <button class="tab-button" onclick="openTab(event, 'stages')">Stages</button>
+            <button class="tab-button" onclick="openTab(event, 'autres')">Autres</button>
+        </div>
+
+        <div id="alternance" class="tab-content active">
+            <h2>Alternance</h2>
+            
+            <p>Depuis le BUT2, je suis en alternance chez Naval Group :</p>
+            
+            <h3>Première année à Cherbourg</h3>
+            <ul>
+                <li>Apprentissage des connaissances générales du sous-marin et des bâtiments de surface. </li>
+                <li>Apprentissage du métier d’intégrateur projeteur via des formationset des interventions de professionnels</li>
+                <li>Prise en main d’une étude de conception et d’intégration</li>
+                <li>Rédaction de document techniques</li>
+            </ul>
+            
+            <h3>Deuxième année à Brest</h3>
+            <ul>
+                <li>Création de méthodes et documents afin d’aider les personnels d’unchantier sur une opération. </li>
+                <li>Prise en main d’études d’emménagement électrique. </li>
+                <li>Rédaction de fichiers études.</li>
+                <li>Réalisation de nomenclatures répertoriant l’état des nappes / traversées / câbles avant et après modification.</li>
+            </ul>
+
+            <h3>Troisième à cinquième année à Lorient</h3>
+            <ul>
+                <li>Gestion des risques et opportunités d’un programme bâtiment de surface.</li>
+                <li>Animation du fichier des risques de visibilité client.</li>
+                <li>Création d’une méthode d’homogénéisation du portefeuille desrisques et opportunités via EXCEL (VBA).</li>
+            </ul>
+        </div>
+
+        <div id="stages" class="tab-content">
+            <h2>Stages</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div style="width: 48%; margin-bottom: 20px;">
+                    <h3><br>Stage de découverte du monde industriel de 3 semaines chez Diamant Industrie</h3>
+                    <ul>
+                        <li>Emballage en cartons</li>
+                        <li>Assemblage de toits métalliques</li>
+                        <li>Application de voile noir sur des ensembles de toits</li>
+                        <li>Préparation de colis</li>
+                    </ul>
+                </div>
+                
+                <div style="width: 48%; margin-bottom: 20px;">
+                    <h3>Stage dans une entreprise d'usinage</h3>
+                    <ul>
+                        <li>Assistance sur usinage machine numérique</li>
+                        <li>Dégrossage de pièce sur machine traditionelle </li>
+                        <li>Ponçage de pièce </li>
+                    </ul>
+                    
+                    <h3>Stage de 3ème à la fac des sciences de Brest dans l'équipe magnétisme</h3>
+                    <ul>
+                        <li>Suivi de travaux, préparation de maquette</li>
+                        <li>Suivi de cours de magnétisme</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="autres" class="tab-content">
+            <h2>Autres expériences</h2>
+            
+            <p>J'ai aussi pu travailler en dehors de mon parcours scolaire :</p>
+            
+            <h3>Serveur dans un bar</h3>
+            <ul>
+                <li>Service client</li>
+                <li>Plonge</li>
+                <li>Relation sociale</li>
+            </ul>
+            
+            <h3>Culture de patates</h3>
+            <ul>
+                <li>Récolte des patates</li>
+                <li>Tri des patates</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>©GUYOMARD Ethan 2025 - Tous droits réservés</p>
+            <p>6 Passage Marguerite Caudan - 56100 Lorient</p>
+            <p>Tél. : 06 12 16 51 27</p>
+            <p>ethan.guyomard1@gmail.com</p>
+            <br>
+            <p>
+                <strong>Ci-joint, mon CV au format PDF. Il contient des informations détaillées sur mon parcours.</strong></p>
+            <a class="btn" href="CV Ethan GUYOMARD.pdf (2).pdf" target="_blank">Télécharger mon CV</a>
+        </div>
+    </footer>
+
+</body>
+</html>

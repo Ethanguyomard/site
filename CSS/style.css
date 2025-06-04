@@ -1,0 +1,218 @@
+/* Styles généraux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    margin: 20px auto;
+}
+
+
+header {
+    background-color: #d8ffab;
+    color: rgb(96, 96, 96);
+    top: 0;
+    z-index: 1000;
+    padding: 0px 30px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center; /* <-- centre verticalement */
+    justify-content: space-between;
+}
+
+.logo-left img,
+.logo-right img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.title-center {
+    text-align: center;
+}
+
+.title-center h1,
+.title-center p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 38px;
+    z-index: 1000;
+    background-color: #00831a;
+    padding: 10px 0;
+    padding-bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #154800;
+}
+
+nav ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.breadcrumb {
+    padding: 10px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.breadcrumb a {
+    color: #00831a;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #00831a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 0.5;
+    font-size: 0.9em;
+    margin: 2px 0;
+}
+
+h1, h2, h3 {
+    color: #00831a;
+    ;
+}
+
+
+h1 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #00831a;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* Styles spécifiques aux onglets */
+.tabs {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    transition: all 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #00831a;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-button:hover {
+    background-color: #4CAF50; /* Changer la couleur de fond lors du survol */
+    color: white; /* Changer la couleur du texte */
+}
+
+/* Cartes de formations */
+.formation-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.formation-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.formation-card h3 {
+    margin-top: 0;
+    color: #00831a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+
+  /* Adaptation mobile */
+  @media (max-width: 768px) {
+    header {
+      padding-bottom: 0;
+    }
+  }
